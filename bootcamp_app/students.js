@@ -7,7 +7,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'bootcampx'
 });
-
+pool.query(text, values)
 pool.query(`
 SELECT students.id as student_id, students.name as name, cohorts.name as cohort
 FROM students

@@ -15,6 +15,7 @@ JOIN students ON students.id = student_id
 JOIN cohorts ON cohorts.id = cohort_id
 WHERE cohorts.name LIKE '%${args[0]}%'
 order by teacher; `)
+pool.query(text, values)
 .then(res => {
   res.rows.forEach(user => {
     console.log(`${user.cohort} ${user.teacher}`);

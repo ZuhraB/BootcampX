@@ -7,3 +7,12 @@ WHERE cohorts.name = 'JUL02'
 GROUP BY teachers.name, cohorts.name
 
 order by teacher; 
+
+CREATE TABLE users (
+  id  PRIMARY KEY,
+  name,
+  birth_year,
+  member_since
+);
+INSERT INTO pets (name, owner_id)
+VALUES ('meow', 1);
